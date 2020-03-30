@@ -3,6 +3,8 @@ package com.aminebag.larjson.jsonparser;
 import com.aminebag.larjson.stream.ByteStream;
 import com.aminebag.larjson.stringdecoder.CharacterDecoder;
 
+import java.io.IOException;
+
 /**
  * Credits : This code is inspired, to a great degree, by the class JsonReader of the Gson library
  */
@@ -59,7 +61,7 @@ public class GsonTokenParser implements LarJsonTokenParser{
     }
 
     @Override
-    public long extLong() {
+    public long nextLong() throws LarJsonParseException, IOException {
         return 0;
     }
 
