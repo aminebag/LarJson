@@ -5,5 +5,5 @@ public interface ByteStream {
     public short nextShort();
     public int nextInt();
     public long nextLong();
-    public int hasRemainingBytes(int bytes);
+	public boolean hasRemainingBytes(int bytes);
 }
