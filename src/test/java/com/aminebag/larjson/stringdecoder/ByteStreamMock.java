@@ -35,7 +35,7 @@ public class ByteStreamMock implements ByteStream{
 
 	@Override
 	public long nextLong() {
-		return 0;
+		return (test[cursor++]<<56 )|(test[cursor++]<<48 )|(test[cursor++]<<40 )|(test[cursor++]<<32 )|(test[cursor++]<<24 )|(test[cursor++]<<16)|(test[cursor++]<<8)|(test[cursor++]);
 	}
 	@Override
 	public boolean hasAtLeastRemainingBytes(int bytes) throws IOException {
