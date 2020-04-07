@@ -15,8 +15,11 @@ public interface LarJsonTokenParser {
     void endObject() throws LarJsonParseException, IOException;
     boolean nextBoolean() throws LarJsonParseException, IOException;
     double nextDouble() throws LarJsonParseException, IOException;
+    byte nextByte() throws LarJsonParseException, IOException;
+    short nextShort() throws LarJsonParseException, IOException;
     int nextInt() throws LarJsonParseException, IOException;
     long nextLong() throws LarJsonParseException, IOException;
+    char nextChar() throws LarJsonParseException, IOException;
     String nextName() throws LarJsonParseException, IOException;
     void nextNull() throws LarJsonParseException, IOException;
     String nextString() throws LarJsonParseException, IOException;
