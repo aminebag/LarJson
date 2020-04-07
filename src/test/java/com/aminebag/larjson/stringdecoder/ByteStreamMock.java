@@ -25,20 +25,19 @@ public class ByteStreamMock implements ByteStream{
 
 	@Override
 	public short nextShort() {
-		short result = (short) (((byte)(test[cursor++]) << 8 )|((byte)test[cursor++]));
-		return result;
+		return (short) (((byte)(test[cursor++]) << 8 )|((byte)test[cursor++]));
 	}
 	@Override
 	public int nextInt() {
-		return (test[cursor++]<<24 )|(test[cursor++]<<16)|(test[cursor++]<<8)|(test[cursor++]);
+		return (test[cursor++]<<24 )|(test[cursor++] & 0xff <<16)|(test[cursor++] & 0xff <<8)|(test[cursor++]);
 	}
 
 	@Override
 	public long nextLong() {
-		return (test[cursor++]<<56 )|(test[cursor++]<<48 )|(test[cursor++]<<40 )|(test[cursor++]<<32 )|(test[cursor++]<<24 )|(test[cursor++]<<16)|(test[cursor++]<<8)|(test[cursor++]);
+		return (test[cursor++]<<56 )|(test[cursor++] & 0xff <<48 )|(test[cursor++]  & 0xff <<40 )|(test[cursor++]  & 0xff <<32 )|(test[cursor++]  & 0xff <<24 )|(test[cursor++]  & 0xff <<16)|(test[cursor++]  & 0xff <<8)|(test[cursor++]);
 	}
 	@Override
 	public boolean hasAtLeastRemainingBytes(int bytes) throws IOException {
-		return test.length-cursor+1 >= bytes;
+		return test.length-cursor >= bytes;
 	}
 }

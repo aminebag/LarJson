@@ -9,7 +9,7 @@ public class Utf8CharacterDecoder implements CharacterDecoder {
 	public final static int MASK_2 = 0b111_00000;
 	public final static int MASK_3 = 0b1111_0000;
 	public final static int MASK_4 = 0b11111_000;
-	public final static String DECODING_ERROR = "An error while decoding charachter :";
+	public final static String DECODING_ERROR = "An error while decoding character :";
 	
 	@Override
     public int decodeCharacter(ByteStream byteStream) throws CharacterDecodingException, IOException {
