@@ -89,4 +89,31 @@ public class GsonTokenParser implements LarJsonTokenParser{
     public long getCurrentPosition() {
         return 0;
     }
+
+	/* (non-Javadoc)
+	 * @see com.aminebag.larjson.jsonparser.LarJsonTokenParser#nextByte()
+	 */
+	@Override
+	public byte nextByte() throws LarJsonParseException, IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.aminebag.larjson.jsonparser.LarJsonTokenParser#nextShort()
+	 */
+	@Override
+	public short nextShort() throws LarJsonParseException, IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	/* (non-Javadoc)
+	 * @see com.aminebag.larjson.jsonparser.LarJsonTokenParser#nextChar()
+	 */
+	@Override
+	public char nextChar() throws LarJsonParseException, IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

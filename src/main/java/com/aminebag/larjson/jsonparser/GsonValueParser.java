@@ -1,5 +1,7 @@
 package com.aminebag.larjson.jsonparser;
 
+import java.io.IOException;
+
 import com.aminebag.larjson.stream.CharacterStream;
 
 /**
@@ -51,4 +53,13 @@ public class GsonValueParser implements LarJsonValueParser {
     public boolean parseBoolean(CharacterStream characterStream) throws LarJsonParseException {
         return false;
     }
+
+	/* (non-Javadoc)
+	 * @see com.aminebag.larjson.jsonparser.LarJsonValueParser#parseLong(com.aminebag.larjson.stream.CharacterStream)
+	 */
+	@Override
+	public long parseLong(CharacterStream characterStream) throws LarJsonParseException, IOException {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
