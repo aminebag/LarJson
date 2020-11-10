@@ -112,7 +112,7 @@ Different JSON file sizes were tested:
 |-------------|------------- | ------------- | ------------- |
 | Reading duration | OutOfMemoryError | 44 min 27 s | 44 min 42 s  |
 | **Heap space** | - | **1.52 MB** | **1.52 MB** |
-| Hard drive | - | 21.77 GB | 21.77 |
+| Hard drive | - | 21.77 GB | 21.77 GB |
 | Writing duration | - | 7 h 25 min | 7 h 31 min |
 
 ### Run
