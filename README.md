@@ -131,7 +131,22 @@ benchmark tests similar to those listed above. Depending on the performance of y
 hours or days. At least 140 GB of hard disk space is required to run all tests.
 
 ## Usage
+### Dependency
+#### Maven
+```xml
+<dependency>
+  <groupId>com.aminebag.larjson</groupId>
+  <artifactId>larjson-mapper</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
+#### Gradle
+```groovy
+implementation 'com.aminebag.larjson:larjson-mapper:1.0.0'
+```
+
+### Hello World
 ```java
 LarJsonTypedMapper<Movie> mapper = new LarJsonTypedMapper<>(Movie.class,
         new LarJsonTypedReadConfiguration.Builder()
