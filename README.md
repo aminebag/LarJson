@@ -31,10 +31,8 @@ in order to measure the time needed to access all the values stored in the objec
 
 ### Mappers
 The following mappers are compared:
-* **LarJson M.B.**: The LarJsonTypedMapper using a blueprint that is entirely in memory. With the current version 
-of this mapper, a memory blueprint cannot exceed 2 GB.
-* **LarJson F.B.**: The LarJsonTypedMapper using a blueprint that is entirely on the hard drive. There's no limit on the
-size of the file other than the capacity of the hard drive.
+* **LarJson M.B.**: The LarJsonTypedMapper using a blueprint that is entirely in memory.
+* **LarJson F.B.**: The LarJsonTypedMapper using a blueprint that is entirely on the hard drive.
 * **Jackson**: The ObjectMapper provided by the Jackson library.
 * **Gson**: The Gson mapper provided by the Gson library.
 
